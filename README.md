@@ -5,4 +5,6 @@ EngagED plugins for Open edX distribution from Tutor
 
 ```bash
 tutor plugins install https://raw.githubusercontent.com/engaged-edu/open-edx-engaged-tutor-plugins/master/engaged-env-config.yml
+tutor plugins enable engaged-env-config
+tutor config save
 ```
