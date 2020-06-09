@@ -2,7 +2,6 @@ name: engaged-env-config
 version: 1.0.0
 patches:
   common-env-features: |
-    "ALLOW_PUBLIC_ACCOUNT_CREATION": false,
     "ENABLE_API_DOCS": true,
     "ENABLE_DISCUSSION_SERVICE": true,
     "ENABLE_DISCUSSION_HOME_PANEL": true,
@@ -10,13 +9,18 @@ patches:
   cms-env-features: |
     "ENABLE_OTHER_COURSE_SETTINGS": true
   lms-env-features: |
+    "ENABLE_MKTG_SITE": true,
     "COURSES_ARE_BROWSABLE": false,
     "ENABLE_THIRD_PARTY_AUTH": true,
-    "ENABLE_ACCOUNT_DELETION": false,
     "ENABLE_BULK_ENROLLMENT_VIEW": true
   cms-env: |
+    "DEFAULT_SITE_THEME": "open-edx-engaged-theme",
     "WIKI_ENABLED": true,
     "TIME_ZONE": "America/Sao_Paulo"
   lms-env: |
+    "DEFAULT_SITE_THEME": "open-edx-engaged-theme",
+    "MKTG_URLS": {
+      "ROOT": "/dashboard"
+    },
     "WIKI_ENABLED": true,
     "TIME_ZONE": "America/Sao_Paulo"
