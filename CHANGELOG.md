@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2020-06-12
+### Changed
+- Skip email validation after user registration.
+- Disable account deletion.
+- Enable milestones application.
+- Send password reset failure email.
+
 ## [1.1.0] - 2020-06-08
 ### Changed
 - Allow public account creation.
