@@ -10,6 +10,7 @@ patches:
   cms-env-features: |
     "ENABLE_OTHER_COURSE_SETTINGS": true
   lms-env-features: |
+    "ENABLE_ACCOUNT_DELETION": false,
     "ENABLE_MKTG_SITE": true,
     "COURSES_ARE_BROWSABLE": false,
     "ENABLE_THIRD_PARTY_AUTH": true,
