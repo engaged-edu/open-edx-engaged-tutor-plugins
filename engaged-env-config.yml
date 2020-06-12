@@ -7,6 +7,7 @@ patches:
     "ENABLE_API_DOCS": true,
     "ENABLE_DISCUSSION_SERVICE": true,
     "ENABLE_DISCUSSION_HOME_PANEL": true,
+    "ENABLE_PASSWORD_RESET_FAILURE_EMAIL": true,
     "ORGANIZATIONS_APP": true
   cms-env-features: |
     "ENABLE_OTHER_COURSE_SETTINGS": true
