@@ -1,12 +1,11 @@
 name: engaged-env-config
-version: 1.2.0
+version: 1.3.0
 patches:
   common-env-features: |
-    "SKIP_EMAIL_VALIDATION": true,
     "MILESTONES_APP": true,
-    "ENABLE_API_DOCS": true,
-    "ENABLE_DISCUSSION_SERVICE": true,
+    "SKIP_EMAIL_VALIDATION": true,
     "ENABLE_DISCUSSION_HOME_PANEL": true,
+    "ENABLE_DISCUSSION_EMAIL_DIGEST": true,
     "ENABLE_PASSWORD_RESET_FAILURE_EMAIL": true,
     "ORGANIZATIONS_APP": true
   cms-env-features: |
@@ -15,16 +14,13 @@ patches:
     "ENABLE_ACCOUNT_DELETION": false,
     "ENABLE_MKTG_SITE": true,
     "COURSES_ARE_BROWSABLE": false,
-    "ENABLE_THIRD_PARTY_AUTH": true,
     "ENABLE_BULK_ENROLLMENT_VIEW": true
   cms-env: |
     "DEFAULT_SITE_THEME": "open-edx-engaged-theme",
-    "WIKI_ENABLED": true,
     "TIME_ZONE": "America/Sao_Paulo"
   lms-env: |
     "DEFAULT_SITE_THEME": "open-edx-engaged-theme",
     "MKTG_URLS": {
       "ROOT": "/dashboard"
     },
-    "WIKI_ENABLED": true,
     "TIME_ZONE": "America/Sao_Paulo"
