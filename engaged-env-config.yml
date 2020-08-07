@@ -1,6 +1,10 @@
 name: engaged-env-config
 version: 1.3.0
 patches:
+  openedx-lms-production-settings: |
+    DCS_SESSION_COOKIE_SAMESITE = 'Lax'
+  openedx-cms-production-settings: |
+    DCS_SESSION_COOKIE_SAMESITE = 'Lax'
   common-env-features: |
     "MILESTONES_APP": true,
     "SKIP_EMAIL_VALIDATION": true,
