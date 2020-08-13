@@ -1,5 +1,5 @@
 name: engaged-env-config
-version: 1.4.0
+version: 1.5.0
 patches:
   openedx-lms-production-settings: |
     DCS_SESSION_COOKIE_SAMESITE = 'Lax'
@@ -30,7 +30,8 @@ patches:
     "ENABLE_ACCOUNT_DELETION": false,
     "ENABLE_MKTG_SITE": true,
     "COURSES_ARE_BROWSABLE": false,
-    "ENABLE_BULK_ENROLLMENT_VIEW": true
+    "ENABLE_BULK_ENROLLMENT_VIEW": true,
+    "ALLOW_EMAIL_ADDRESS_CHANGE": false
   cms-env: |
     "DEFAULT_SITE_THEME": "open-edx-engaged-theme",
     "TIME_ZONE": "America/Sao_Paulo"
